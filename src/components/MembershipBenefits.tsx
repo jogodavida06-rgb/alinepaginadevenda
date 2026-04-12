@@ -1,10 +1,4 @@
 import React from 'react';
-import { ShoppingBag, Film, Fuel, Stethoscope, Dumbbell, Building } from 'lucide-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 interface MembershipBenefitsProps {
   onRedirect: () => void;
@@ -113,284 +107,33 @@ const MembershipBenefits: React.FC<MembershipBenefitsProps> = ({ onRedirect }) =
             Veja grandes marcas parceiras da Federal Associados com descontos exclusivos para você que é associado em qualquer lugar do Brasil!
           </h3>
           
-          {/* Grid de logos das marcas */}
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-            {/* Logos das marcas parceiras */}
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/1.png"
-                alt="Marca parceira 1"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/2.png"
-                alt="Marca parceira 2"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/3.jpg"
-                alt="Marca parceira 3"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/4.png"
-                alt="Marca parceira 4"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/5.png"
-                alt="Marca parceira 5"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/6.jpg"
-                alt="Marca parceira 6"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/7.png"
-                alt="Marca parceira 7"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/8.jpg"
-                alt="Marca parceira 8"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/9.jpg"
-                alt="Marca parceira 9"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/10.jpg"
-                alt="Marca parceira 10"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/11.png"
-                alt="Marca parceira 11"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/12.jpg"
-                alt="Marca parceira 12"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/13.jpg"
-                alt="Marca parceira 13"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/14.jpg"
-                alt="Marca parceira 14"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/15.png"
-                alt="Marca parceira 15"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/16.jpg"
-                alt="Marca parceira 16"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/17.jpg"
-                alt="Marca parceira 17"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            <div className="aspect-square bg-white rounded-lg overflow-hidden">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios/18.png"
-                alt="Marca parceira 18"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
+          <div className="rounded-xl overflow-hidden">
+            <img
+              src="https://qkbeuebapuqnlpjgcvxb.supabase.co/storage/v1/object/public/imagem/parceiros.jpeg"
+              alt="Marcas parceiras da Federal Associados"
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
           </div>
         </div>
 
         {/* Descontos imperdíveis para você aproveitar */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12 md:mb-16">
-          {/* Texto à esquerda */}
-          <div>
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              São centenas de parceiros com descontos<br />
-              imperdíveis para você aproveitar sendo um associado da Federal Associados.
-            </h3>
-          </div>
-          
-          {/* Grid de imagens à direita */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {/* Imagem 1 */}
-            <div className="aspect-square bg-white rounded-lg overflow-hidden shadow-md">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios%202/1.png"
-                alt="Desconto imperdível 1"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            {/* Imagem 2 */}
-            <div className="aspect-square bg-white rounded-lg overflow-hidden shadow-md">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios%202/2.png"
-                alt="Desconto imperdível 2"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            {/* Imagem 3 */}
-            <div className="aspect-square bg-white rounded-lg overflow-hidden shadow-md">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios%202/3.png"
-                alt="Desconto imperdível 3"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            {/* Imagem 4 */}
-            <div className="aspect-square bg-white rounded-lg overflow-hidden shadow-md">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios%202/4.png"
-                alt="Desconto imperdível 4"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-            
-            {/* Imagem 5 */}
-            <div className="aspect-square bg-white rounded-lg overflow-hidden shadow-md col-span-2 md:col-span-1">
-              <img
-                src="https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/beneficios%202/5.png"
-                alt="Desconto imperdível 5"
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-              />
-            </div>
-          </div>
+        <div className="mb-12 md:mb-16">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            São centenas de parceiros com descontos<br />
+            imperdíveis para você aproveitar sendo um associado da Federal Associados.
+          </h3>
         </div>
 
-        {/* Novo bloco de perfumes */}
+        {/* Bloco de perfumes */}
         <div className="mt-8 md:mt-12 max-w-4xl mx-auto">
-          <div className="bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200">
-            <div className="mb-4">
-              <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
-                spaceBetween={16}
-                slidesPerView={1}
-                loop={true}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: true
-                }}
-                navigation={true}
-                pagination={{ 
-                  clickable: true,
-                  dynamicBullets: true
-                }}
-                className="perfume-carousel"
-              >
-                {[
-                  'https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/perfumes/1.jpg',
-                  'https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/perfumes/2.jpg',
-                  'https://fznhzqgulsyrjfrzcdqi.supabase.co/storage/v1/object/public/perfumes/3.jpg'
-                ].map((imageUrl, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="aspect-[3/4] overflow-hidden rounded-lg">
-                      <img
-                        src={imageUrl}
-                        alt={`Perfume Federal Cosméticos ${index + 1}`}
-                        className="w-full h-full object-cover"
-                        loading="lazy"
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-            <div className="text-center">
-              <p className="text-base md:text-lg font-bold text-gray-900 mb-2">
-                Todo associado também tem direito a 1 PERFUME MENSAL GRÁTIS da Federal Cosméticos!
-              </p>
-              <p className="text-sm md:text-base text-gray-600">
-                Isso mesmo: todo mês você recebe um perfume exclusivo, direto da Federal Cosméticos.
-              </p>
-            </div>
+          <div className="bg-white rounded-xl p-4 md:p-6 shadow-md border border-gray-200 text-center">
+            <p className="text-base md:text-lg font-bold text-gray-900 mb-2">
+              Todo associado também tem direito a 1 PERFUME MENSAL GRÁTIS da Federal Cosméticos!
+            </p>
+            <p className="text-sm md:text-base text-gray-600">
+              Isso mesmo: todo mês você recebe um perfume exclusivo, direto da Federal Cosméticos.
+            </p>
           </div>
         </div>
 
